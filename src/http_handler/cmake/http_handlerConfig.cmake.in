@@ -1,0 +1,5 @@
+include(CMakeFindDependencyMacro)
+
+if(NOT TARGET http_handler)
+	include("${http_handler_CMAKE_DIR}/http_handlerTargets.cmake")
+endif()
