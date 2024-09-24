@@ -14,20 +14,23 @@ cpp_restfu_boost_beast is a tiny http library based on [`Boost.Beast`](https://w
 
 ## Source code structure
 
-|--- README.md
-|--- include
-|    |--- thirdparty
-|         |--- json.hpp
-|--- src
-|    |--- data
-|    |--- http_client
-|    |--- http_handler
-|    |--- http_server
-|    |--- restful_api
-|    |--- logger
-|    |--- utils
-|--- CMakeList.txt
-|___ build.sh
+├── build.sh
+├── cmake
+│   └── Project.cmake
+├── CMakeLists.txt
+├── include
+│   └── thirdparty
+├── src
+│   ├── CMakeLists.txt
+│   ├── data
+│   ├── http_client
+│   ├── http_handler
+│   ├── http_server
+│   ├── logger
+│   ├── restful_api
+│   └── utils
+└── tests
+    └── CMakeLists.txt
 
 ## Build
 
