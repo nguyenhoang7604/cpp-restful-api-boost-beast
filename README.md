@@ -12,8 +12,10 @@ cpp_restfu_boost_beast is a tiny http library based on [`Boost.Beast`](https://w
 - Timers and signals support included
 - Customizable thread pool size
 
-## Source code structure
+## Structure
 
+```
+├── README.md
 ├── build.sh
 ├── cmake
 │   └── Project.cmake
@@ -31,7 +33,7 @@ cpp_restfu_boost_beast is a tiny http library based on [`Boost.Beast`](https://w
 │   └── utils
 └── tests
     └── CMakeLists.txt
-
+```
 ## Build
 
 cpp_restful_boost_beast depends Boost.Beast and nlohmann/json library.
