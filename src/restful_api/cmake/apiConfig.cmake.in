@@ -1,0 +1,5 @@
+include(CMakeFindDependencyMacro)
+
+if(NOT TARGET restful_api)
+	include("${restful_api_CMAKE_DIR}/restful_apiTargets.cmake")
+endif()

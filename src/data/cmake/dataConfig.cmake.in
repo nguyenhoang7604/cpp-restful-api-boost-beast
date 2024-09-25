@@ -1,0 +1,5 @@
+include(CMakeFindDependencyMacro)
+
+if(NOT TARGET data)
+	include("${data_CMAKE_DIR}/dataTargets.cmake")
+endif()
