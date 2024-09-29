@@ -1,0 +1,9 @@
+include(CMakeFindDependencyMacro)
+
+if(NOT TARGET utils)
+	find_package(utils REQUIRED)
+endif()
+
+if(NOT TARGET logger)
+	include("${logger_CMAKE_DIR}/loggerTargets.cmake")
+endif()
