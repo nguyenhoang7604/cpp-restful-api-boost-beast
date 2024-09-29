@@ -25,4 +25,9 @@ target_include_directories(restful_api
 
 include(CMakePackageConfigHelpers)
 
+install(TARGETS restful_api
+	LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+	ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
+)
+
 install(FILES ${headers} DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/restful_api)

@@ -25,6 +25,11 @@ target_include_directories(utils
 
 include(CMakePackageConfigHelpers)
 
+install(TARGETS utils
+	LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+	ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
+)
+
 install(FILES 
 	${headers} DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/utils
 )

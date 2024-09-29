@@ -38,4 +38,10 @@ target_include_directories(http_handler
 
 include(CMakePackageConfigHelpers)
 
+
+install(TARGETS http_handler
+	LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+	ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
+)
+
 install(FILES ${headers} DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/http_handler)
